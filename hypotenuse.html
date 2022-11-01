@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triangle | Hypotonuse</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-center">
+        <span class="heading">Fun With Triangles △</span>
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <a href="./index.html" class="nav-link">is triangle?</a>
+            </li>
+            <li><a href="./quiz.html" class="nav-link">quiz</a></li>
+            <li>
+              <a href="./hypotenuse.html" class="nav-link active-link"
+                >hypotenuse</a
+              >
+            </li>
+            <li><a href="./area.html" class="nav-link">area of triangle</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="content">
+      <h3>Hypotenuse formula: √(base² + height²)</h3>
+      <p>
+        Enter the base and height of a triangle, we'll calculate the hypotenuse
+        for you.
+      </p>
+    </div>
+
+    <form name="form">
+      <h3>Calculate Hypotenuse of a triangle</h3>
+      <div class="inputs">
+        <div class="base">
+          <label for="base-input">Enter base value (a) =</label>
+          <input type="number" name="base-input" id="base-input" />
+        </div>
+        <div class="height">
+          <label for="height-input">Enter height value (b) =</label>
+
+          <input type="number" name="height-input" id="height-input" />
+        </div>
+      </div>
+      <div class="btn-container">
+        <button class="btn" data-btn="calculate">Calculate</button>
+        <button class="btn" data-btn="clear">Clear</button>
+      </div>
+
+      <div class="output-section hypo-output"></div>
+    </form>
+  </body>
+  <script src="./hypotenuse.js" defer></script>
+</html>

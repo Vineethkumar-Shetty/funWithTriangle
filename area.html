@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle | Area</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-center">
+          <span class="heading">Fun With Triangles △</span>
+          <nav>
+            <ul class="nav-links">
+              <li>
+                <a href="./index.html" class="nav-link">is triangle?</a>
+              </li>
+              <li><a href="./quiz.html" class="nav-link">quiz</a></li>
+              <li><a href="./hypotenuse.html" class="nav-link">hypotenuse</a></li>
+              <li>
+                <a href="./area.html" class="nav-link active-link"
+                  >area of triangle</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+  
+      <div class="content">
+        <p>
+          Enter all three sides of a triangle, we'll calculate the area of that
+          triangle for you.
+        </p>
+      </div>
+  
+      <form name="form">
+        <h3>Calculate Area of a triangle</h3>
+        <div class="inputs">
+          <div class="sideOne-type">
+            <label for="sideOne-input">Side 1:</label>
+            <input type="number" name="sideOne-input" id="sideOne-input" />
+          </div>
+          <div class="sideTwo-type">
+            <label for="sideTwo-input">Side 2:</label>
+  
+            <input type="number" name="sideTwo-input" id="sideTwo-input" />
+          </div>
+          <div class="sideThree-type">
+            <label for="sideThree-input">Side 3:</label>
+            <input type="number" name="sideThree-input" id="sideThree-input" />
+          </div>
+        </div>
+        <div class="btn-container">
+          <button class="btn" data-btn="calculate">Calculate</button>
+          <button class="btn" data-btn="clear">Clear</button>
+        </div>
+  
+        <div class="output-section"></div>
+      </form>
+</body>
+<script src="./area.js" defer></script>
+</html>

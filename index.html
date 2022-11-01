@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triangle</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-center">
+        <span class="heading">Fun With Triangles 🔼</span>
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <a href="./index.html" class="nav-link active-link"
+                >triangle???</a
+              >
+            </li>
+            <li><a href="./quiz.html" class="nav-link">quiz</a></li>
+            <li><a href="./hypotenuse.html" class="nav-link">hypotenuse</a></li>
+            <li><a href="./area.html" class="nav-link">area of triangle</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="content">
+      <p>Enter all three angles, lets check whether it is triangle or not?.</p>
+    </div>
+
+    <form name="form">
+      <h3>Angles of Triangle</h3>
+      <div class="inputs">
+        <div class="angleOne-type">
+          <label for="ang-one-input">Angle 1:</label>
+          <input
+            type="number"
+            name="ang-one-input"
+            id="ang-one-input"
+            required
+          />
+        </div>
+        <div class="angleTwo-type">
+          <label for="ang-two-input">Angle 2:</label>
+
+          <input
+            type="number"
+            name="ang-two-input"
+            id="ang-two-input"
+            required
+          />
+        </div>
+        <div class="angleThree-type">
+          <label for="ang-three-input">Angle 3:</label>
+          <input
+            type="number"
+            name="ang-three-input"
+            id="ang-three-input"
+            required
+          />
+        </div>
+      </div>
+      <div class="btn-container">
+        <button class="btn" data-btn="check">Check</button>
+        <button class="btn" data-btn="clear">Clear</button>
+      </div>
+      <div class="output-section"></div>
+    </form>
+  </body>
+</html>
