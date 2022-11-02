@@ -80,7 +80,7 @@ function displayQuiz(quizData) {
           .map((option, j) => {
             return `          
             <label for="${i + 1}${j + 1}">
-              <input type="radio" name="question-${
+              <input id="radio" type="radio" name="question-${
                 i + 1
               }" value="${option}" id="${i + 1}${j + 1}" /> ${option}</label>
           `;
@@ -125,7 +125,7 @@ function handleSubmit(e) {
   output.innerHTML = `
     Your score is <span style="color:${
       score > 5 ? "green" : "red"
-    }">${score}</span> / ${data.length} ${score > 5 ? "🎉" : "😟"}
+    }">${score}</span> / ${data.length} ${score > 5 ? "🙌" : "😔"}
     `;
 }
 
